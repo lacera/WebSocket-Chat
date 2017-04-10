@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700');
+
+body {
+    height: 100vh;
+    font-family: Fira Sans, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #4f4f4f;
+    background-color: #999;
+}
+
+#main-container {
+    width: 100%;
+    height: 100%;
+}
+
+#left-panel {
+    float: left;
+    width: 21%;
+    height: 100%;
+    background-color: #ff8663;
+}
+    #avatar {
+        height: 7%;
+        margin: 20px 0;
+    }
+        #avatar .photo {
+            width: 60px;
+            height: 60px;
+            margin: 0 10px;
+            background-color: #fff;
+            background-size: cover;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 11px 0 0 0;
+            line-height: 17px;
+            color: #999;
+            float: left;
+            cursor: pointer;
+        }
+        #avatar .name {
+            height: 60px;
+            padding: 0 0 0 5px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 60px;
+            color: #fff;
+            float: left;
+        }
+    .members-label {
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+    }
+    #members-list {
+        list-style-type: none;
+        padding-left: 25px;
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff;
+    }
+        #members-list li {
+            margin-bottom: 3px;
+        }
+
+#right-panel {
+    float: right;
+    width: 79%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.messages-panel {
+    height: 90%;
+}
+
+.list-group
+{
+    height: 90%;
+    overflow: auto;
+}
+
+.sending-row {
+
+}
+
+.form-control, .btn {
+    font-size: 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    outline: none;
+}
+
+#sendButton {
+    width: 100%;
+    height: 34px;
+    color: #fff;
+    background-color: #ff8663;
+}
+
+.substrate-auth, .substrate-photo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+}
+    #auth-panel, #photo-panel {
+        width: 28vw;
+        height: 25vh;
+        margin: auto;
+        padding: 30px 0 0 0;
+        border-radius: 10px;
+        background-color: #ededed;
+        text-indent: 10px;
+        font-size: 16px;
+    }
+        .auth-controls, .photo-controls {
+            height: 85%;
+            margin: 0 10px 10px 10px;
+            padding: 20px 10px 10px 10px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+            .auth-control {
+                font-size: 12px;
+                margin-bottom: 10px;
+                height: 32px;
+                border-radius: 16px;
+            }
+            #authButton, #cancelButton, #loadButton {
+                width: 25%;
+                height: 34px;
+                margin-top: 25px;
+                color: #fff;
+                background-color: #ff8663;
+                border: none;
+                float: right;
+            }
+
+.substrate-photo {
+    display: none;
+}
+    #photo-panel {
+        width: 32vw;
+        height: 38vh;
+    }
+        .photo-controls {
+            height: 90%;
+        }
+            .photo-loader {
+                width: 200px;
+                height: 200px;
+                margin: auto;
+                border-radius: 20px;
+                border: 1px dashed;
+                text-indent: 0;
+                overflow: hidden;
+            }
+            #cancelButton, #loadButton {
+                margin-left: 10px;
+            }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-group-item {
+    height: auto;
+    border: none !important;
+}
+    .message {
+        height: auto;
+    }
+        .msg-photo {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            background-color: #fff;
+            background-size: cover;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            padding-top: 11px;
+            line-height: 17px;
+            color: #999;
+            float: left;
+            overflow: hidden;
+        }
+            .msg-photo img {
+                margin-top: -11px;
+            }
+        .msg-content {
+            min-height: 60px;
+        }
+            .msg-name {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 30px;
+            }
+            .msg-date {
+                margin-left: 10px;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 20px;
+                color: #999;
+            }
+            .msg-text {
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 20px;
+                margin-left: 80px;
+            }
